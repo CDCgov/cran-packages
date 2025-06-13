@@ -2,4 +2,5 @@
 
 export(check_for_packagesrds)
 export(get_cdc_authored)
+importFrom(stats,na.omit)
 importFrom(utils,download.file)

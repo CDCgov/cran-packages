@@ -37,7 +37,7 @@ get_cdc_authored <- function(
   cran_file <- file.path(path, "cran_file")
   
   if(!file.exists(cran_file)){
-    download.file(url = url, destfile = cran_file, extra = extra)
+    download.file(url = url, destfile = cran_file, extra = extra, quiet = TRUE)
   }
   
   cran_packages <- as.data.frame(readRDS(cran_file), row.names=NA)
@@ -55,11 +55,36 @@ get_cdc_authored <- function(
     subset = grepl(
       regex,
       paste(Author, Maintainer)
-    ),
+    )
     
-    # keep only the most relevant information
-    select = c("Package", "Version", "Date/Publication", "CRAN_URL")
   )
+  
+  cdc_packages$Listed <- get_author_info(
+    cdc_packages,
+    elements = c("given", "family", "email"),
+    regex = regex
+  )
+  cdc_packages$Role <- get_author_info(
+    cdc_packages,
+    elements = "role",
+    regex = regex
+  )
+  cdc_packages$Comment <- get_author_info(
+    cdc_packages,
+    elements = "comment",
+    regex = regex
+  )
+  
+  
+  cdc_packages <- subset(
+    cdc_packages,
+    # keep only the most relevant information
+    select = c(
+      "Package", "Version", "Date/Publication",
+      "Listed", "Role", "Comment", "CRAN_URL"
+    )
+  )
+  
   
   rownames(cdc_packages) <- NULL
   
@@ -67,6 +92,49 @@ get_cdc_authored <- function(
   class(cdc_packages) <- c("tbl_df", "tbl", class(cdc_packages))
   
   return(cdc_packages)
+}
+
+
+
+
+#' Get author information
+#'
+#' @description Extracts person fields from the authors.
+#'
+#' @param .data Data frame with package and author information.
+#' @param elements Which elements to extract.
+#' @param regex Which authors to match.
+#' 
+#' @returns The person fields requested for the authors matching the regex.
+#' @importFrom stats na.omit
+get_author_info <- function(
+    .data,
+    elements,
+    regex = "Disease Control|CDC|cdc[.]gov"
+){
+  getElement(.data, "Authors@R") |> 
+    sapply(
+      function(package){
+        package |>
+          parse(text = _) |>
+          eval() |>
+          sapply(
+            FUN = function(x){
+              if(grepl(regex, as.character(x))){
+                unlist(x)[elements] |>
+                  na.omit() |>
+                  paste(collapse = " ") |>
+                  gsub("[[:space::]]+", " ", x = _)
+              } else {
+                NA_character_
+              }
+            }
+          ) |>
+          na.omit() |>
+          paste(collapse = "")
+      },
+      USE.NAMES = FALSE
+    )
 }
 
   

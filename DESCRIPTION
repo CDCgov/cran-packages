@@ -22,7 +22,8 @@ Description: Searches `CRAN` records for packages listing cdc.gov authors,
 License: MIT + file LICENSE
 URL: https://github.com/CDCgov/cran-packages
 Imports:
-    utils
+    utils,
+    stats
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.2

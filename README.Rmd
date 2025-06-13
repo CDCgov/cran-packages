@@ -60,8 +60,15 @@ get_cdc_authored()
 
 
 ```{r eval=TRUE, echo=FALSE, message=FALSE}
-cranpackages::get_cdc_authored() |>
-  knitr::kable()
+cdc_packages <- cranpackages::get_cdc_authored()
+
+cdc_packages$Package <- paste0(
+  "[", cdc_packages$Package, "](", cdc_packages$CRAN_URL, ")"
+)
+
+cdc_packages$CRAN_URL <- NULL
+
+knitr::kable(cdc_packages)
 ```
 
 
