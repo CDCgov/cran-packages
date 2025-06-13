@@ -124,7 +124,7 @@ get_author_info <- function(
                 unlist(x)[elements] |>
                   na.omit() |>
                   paste(collapse = " ") |>
-                  gsub("[[:space::]]+", " ", x = _)
+                  gsub("\\n", " ", x = _)
               } else {
                 NA_character_
               }
