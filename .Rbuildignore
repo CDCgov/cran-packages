@@ -1,0 +1,8 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.github$
+^README\.Rmd$
+^README-.*\.png$
+^LICENSE\.md$
+^DISCLAIMER\.md$
+^codecov\.yml$

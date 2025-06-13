@@ -1,0 +1,103 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# cranpackages: Check for CDC contributted R packages in CRAN
+
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/CDCgov/cran-packages/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/CDCgov/cran-packages/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/CDCgov/cran-packages/graph/badge.svg)](https://app.codecov.io/gh/CDCgov/cran-packages)
+<!-- badges: end -->
+
+## Overview
+
+Checks [CRAN](https://cran.r-project.org/) information for packages
+authored or maintained by CDC employees, or those that declare CDC
+funding. Looks in the undocumented file `packages.rds` as suggested by
+[Jeroen Ooms](https://github.com/jeroen) in in [this `stackoverflow`
+answer](https://stackoverflow.com/a/8830439). While there is no
+guarantee that the file will continue to be available, it exists *at
+least* since Jan 2012, when that answer was provided.
+
+Looks for `CDC`, `cdc.gov`, and `Disease Control` in the author and
+maintainer fields for all packages listed in CRAN. It does not look for
+archived packages.
+
+## Usage
+
+Unless you expect or know the file to have moved locations, the default
+`url` should be fine. Unless you want to try different search patterns,
+the default `regex` should be fine.
+
+This table was last updated on 2025-06-13.
+
+``` r
+remotes::install_github("CDCgov/cran-packages")
+
+library(package = "cranpackages")
+
+get_cdc_authored()
+```
+
+| Package | Version | Date/Publication | CRAN_URL |
+|:---|:---|:---|:---|
+| branchingprocess | 0.1.0 | 2025-04-25 12:50:05 UTC | <https://CRAN.R-project.org/package=branchingprocess> |
+| epiworldR | 0.8.3.0 | 2025-06-12 22:20:02 UTC | <https://CRAN.R-project.org/package=epiworldR> |
+| epiworldRShiny | 0.2.3 | 2025-05-14 14:50:02 UTC | <https://CRAN.R-project.org/package=epiworldRShiny> |
+| facilityepimath | 0.1.0 | 2025-03-07 11:10:13 UTC | <https://CRAN.R-project.org/package=facilityepimath> |
+| LTASR | 0.1.4 | 2024-08-22 23:00:02 UTC | <https://CRAN.R-project.org/package=LTASR> |
+| naaccr | 3.1.1 | 2024-09-20 14:20:05 UTC | <https://CRAN.R-project.org/package=naaccr> |
+| nncc | 2.0.0 | 2024-01-11 14:10:02 UTC | <https://CRAN.R-project.org/package=nncc> |
+| PAutilities | 1.2.1 | 2025-06-11 15:30:11 UTC | <https://CRAN.R-project.org/package=PAutilities> |
+| quadkeyr | 0.1.0 | 2025-03-24 15:00:02 UTC | <https://CRAN.R-project.org/package=quadkeyr> |
+
+# DISCLAIMER
+
+Use of this service is limited only to **non-sensitive and publicly
+available data**. Users must not use, share, or store any kind of
+sensitive data like health status, provision or payment of healthcare,
+Personally Identifiable Information (PII) and/or Protected Health
+Information (PHI), etc. under **ANY** circumstance.
+
+Administrators for this service reserve the right to moderate all
+information used, shared, or stored with this service at any time. Any
+user that cannot abide by this disclaimer and Code of Conduct may be
+subject to action, up to and including revoking access to services.
+
+The material embodied in this software is provided to you “as-is” and
+without warranty of any kind, express, implied or otherwise, including
+without limitation, any warranty of fitness for a particular purpose. In
+no event shall the Centers for Disease Control and Prevention (CDC) or
+the United States (U.S.) government be liable to you or anyone else for
+any direct, special, incidental, indirect or consequential damages of
+any kind, or any damages whatsoever, including without limitation, loss
+of profit, loss of use, savings or revenue, or the claims of third
+parties, whether or not CDC or the U.S. government has been advised of
+the possibility of such loss, however caused and on any theory of
+liability, arising out of or in connection with the possession, use or
+performance of this software.
+
+# MIT License
+
+Copyright (c) 2025 gtrendshealth authors and the US Centers for Disease
+Control and Prevention
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the
+“Software”), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

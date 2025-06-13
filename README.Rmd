@@ -1,0 +1,72 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+
+```{r}
+#| echo: false
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+
+
+# cranpackages: Check for CDC contributted R packages in CRAN
+
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/CDCgov/cran-packages/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/CDCgov/cran-packages/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/CDCgov/cran-packages/graph/badge.svg)](https://app.codecov.io/gh/CDCgov/cran-packages)
+<!-- badges: end -->
+
+
+## Overview
+
+Checks [CRAN](https://cran.r-project.org/) information for packages authored or
+maintained by CDC employees, or those that declare CDC funding.
+Looks in the undocumented file `packages.rds` as suggested by
+[Jeroen Ooms](https://github.com/jeroen) in
+in [this `stackoverflow` answer](https://stackoverflow.com/a/8830439).
+While there is no guarantee that the file will continue to be available,
+it exists _at least_ since Jan 2012, when that answer was provided.
+
+Looks for `CDC`, `cdc.gov`, and `Disease Control` in the author and maintainer
+fields for all packages listed in CRAN.
+It does not look for archived packages.
+
+
+## Usage
+
+Unless you expect or know the file to have moved locations, the default `url`
+should be fine.
+Unless you want to try different search patterns, the default `regex` should be
+fine.
+
+
+This table was last updated on `r Sys.Date()`.
+
+```{r eval=FALSE}
+remotes::install_github("CDCgov/cran-packages")
+
+library(package = "cranpackages")
+
+get_cdc_authored()
+```
+
+
+```{r eval=TRUE, echo=FALSE, message=FALSE}
+cranpackages::get_cdc_authored() |>
+  knitr::kable()
+```
+
+
+
+
+```{r child=c("DISCLAIMER.md", "LICENSE.md")}
+
+```
