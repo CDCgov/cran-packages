@@ -48,7 +48,7 @@ get_cdc_authored()
 | [facilityepimath](https://CRAN.R-project.org/package=facilityepimath) | 0.1.0 | 2025-03-07 11:10:13 UTC | Centers for Disease Control and Prevention | fnd | Modeling Infectious Diseases in Healthcare Network award number U01CK000585 |
 | [LTASR](https://CRAN.R-project.org/package=LTASR) | 0.1.4 | 2024-08-22 23:00:02 UTC | Stephen Bertke <sbertke@cdc.gov> |  |  |
 | [naaccr](https://CRAN.R-project.org/package=naaccr) | 3.1.1 | 2024-09-20 14:20:05 UTC | United States Centers for Disease Control and Prevention | cph |  |
-| [nncc](https://CRAN.R-project.org/package=nncc) | 2.0.0 | 2024-01-11 14:10:02 UTC | Beau Bruce <lue7@cdc.govZhaohui> Cui <nyv5@cdc.gov> | aut |  |
+| [nncc](https://CRAN.R-project.org/package=nncc) | 2.0.0 | 2024-01-11 14:10:02 UTC | Beau Bruce <lue7@cdc.gov> Zhaohui Cui <nyv5@cdc.gov> | aut |  |
 | [PAutilities](https://CRAN.R-project.org/package=PAutilities) | 1.2.1 | 2025-06-11 15:30:11 UTC | Centers for Disease Control and Prevention | ctb |  |
 | [quadkeyr](https://CRAN.R-project.org/package=quadkeyr) | 0.1.0 | 2025-03-24 15:00:02 UTC | CDC’s Center for Forecasting and Outbreak Analytics | fnd | This project was made possible by cooperative agreement CDC-RFA-FT-23-0069 (grant \# NU38FT000009-01-00) from the CDC’s Center for Forecasting and Outbreak Analytics. Its contents are solely the responsibility of the authors and do not necessarily represent the official views of the Centers for Disease Control and Prevention. |
 

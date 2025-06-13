@@ -131,7 +131,8 @@ get_author_info <- function(
             }
           ) |>
           na.omit() |>
-          paste(collapse = "")
+          paste(collapse = " ") |>
+          gsub(" +", " ", x = _)
       },
       USE.NAMES = FALSE
     )
