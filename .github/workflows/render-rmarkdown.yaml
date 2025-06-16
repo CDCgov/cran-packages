@@ -32,11 +32,9 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: devtools
+          dependencies: '"hard"'
+          extra-packages: any::knitr, any::rmarkdown, local::.
       
-      - name: Install self
-        run: Rscript -e 'devtools::install()'
-
       - name: Render Rmarkdown files and Commit Results
         run: |
           Rscript -e 'rmarkdown::render("README.Rmd")'
