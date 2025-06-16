@@ -48,7 +48,7 @@ Unless you want to try different search patterns, the default `regex` should be
 fine.
 
 
-This table was last updated on `r Sys.Date()`.
+This table was last updated on `r format(Sys.time(), "%Y-%m-%d at %H:%M %Z")`.
 
 ```{r eval=FALSE}
 remotes::install_github("CDCgov/cran-packages")
