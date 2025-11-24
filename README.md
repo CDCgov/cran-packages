@@ -30,7 +30,7 @@ Unless you expect or know the file to have moved locations, the default
 `url` should be fine. Unless you want to try different search patterns,
 the default `regex` should be fine.
 
-This table was last updated on 2025-11-17 at 02:17 UTC.
+This table was last updated on 2025-11-24 at 02:27 UTC.
 
 ``` r
 remotes::install_github("CDCgov/cran-packages")
@@ -54,6 +54,7 @@ get_cdc_authored()
 | [nncc](https://CRAN.R-project.org/package=nncc)                         | 2.0.0    | 2024-01-11 14:10:02 UTC | Beau Bruce <lue7@cdc.gov> Zhaohui Cui <nyv5@cdc.gov>                                       | aut  |                                                                                                                                                                                                                                                                                                                                         |
 | [PAutilities](https://CRAN.R-project.org/package=PAutilities)           | 1.2.1    | 2025-06-11 15:30:11 UTC | Centers for Disease Control and Prevention                                                 | ctb  |                                                                                                                                                                                                                                                                                                                                         |
 | [quadkeyr](https://CRAN.R-project.org/package=quadkeyr)                 | 0.1.0    | 2025-03-24 15:00:02 UTC | CDC’s Center for Forecasting and Outbreak Analytics                                        | fnd  | This project was made possible by cooperative agreement CDC-RFA-FT-23-0069 (grant \# NU38FT000009-01-00) from the CDC’s Center for Forecasting and Outbreak Analytics. Its contents are solely the responsibility of the authors and do not necessarily represent the official views of the Centers for Disease Control and Prevention. |
+| [rbranding](https://CRAN.R-project.org/package=rbranding)               | 0.1.0    | 2025-11-21 15:00:02 UTC | Centers for Disease Control and Prevention’s Center for Forecasting and Outbreak Analytics | fnd  | Cooperative agreement CDC-RFA-FT-23-0069                                                                                                                                                                                                                                                                                                |
 
 # DISCLAIMER
 
