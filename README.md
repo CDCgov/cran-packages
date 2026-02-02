@@ -30,7 +30,7 @@ Unless you expect or know the file to have moved locations, the default
 `url` should be fine. Unless you want to try different search patterns,
 the default `regex` should be fine.
 
-This table was last updated on 2026-01-26 at 02:41 UTC.
+This table was last updated on 2026-02-02 at 03:19 UTC.
 
 ``` r
 remotes::install_github("CDCgov/cran-packages")
@@ -55,7 +55,7 @@ get_cdc_authored()
 | [PAutilities](https://CRAN.R-project.org/package=PAutilities)           | 1.2.1    | 2025-06-11 15:30:11 UTC | Centers for Disease Control and Prevention                                                 | ctb  |                                                                                                                                                                                                                                                                                                                                         |
 | [quadkeyr](https://CRAN.R-project.org/package=quadkeyr)                 | 0.1.0    | 2025-03-24 15:00:02 UTC | CDC’s Center for Forecasting and Outbreak Analytics                                        | fnd  | This project was made possible by cooperative agreement CDC-RFA-FT-23-0069 (grant \# NU38FT000009-01-00) from the CDC’s Center for Forecasting and Outbreak Analytics. Its contents are solely the responsibility of the authors and do not necessarily represent the official views of the Centers for Disease Control and Prevention. |
 | [rbranding](https://CRAN.R-project.org/package=rbranding)               | 0.1.1    | 2025-12-08 23:40:02 UTC | Centers for Disease Control and Prevention’s Center for Forecasting and Outbreak Analytics | fnd  | Cooperative agreement CDC-RFA-FT-23-0069                                                                                                                                                                                                                                                                                                |
-| [RSTr](https://CRAN.R-project.org/package=RSTr)                         | 1.0.0    | 2026-01-17 20:10:16 UTC | David DeLara <sfq1@cdc.gov> Centers for Disease Control and Prevention                     |      | <https://ror.org/042twtr12>                                                                                                                                                                                                                                                                                                             |
+| [RSTr](https://CRAN.R-project.org/package=RSTr)                         | 1.1.4    | 2026-01-31 06:40:02 UTC | David DeLara <sfq1@cdc.gov> Centers for Disease Control and Prevention                     |      | <https://ror.org/042twtr12>                                                                                                                                                                                                                                                                                                             |
 
 # DISCLAIMER
 
