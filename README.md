@@ -30,7 +30,7 @@ Unless you expect or know the file to have moved locations, the default
 `url` should be fine. Unless you want to try different search patterns,
 the default `regex` should be fine.
 
-This table was last updated on 2026-02-23 at 03:19 UTC.
+This table was last updated on 2026-03-02 at 03:10 UTC.
 
 ``` r
 remotes::install_github("CDCgov/cran-packages")
