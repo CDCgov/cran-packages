@@ -30,7 +30,7 @@ Unless you expect or know the file to have moved locations, the default
 `url` should be fine. Unless you want to try different search patterns,
 the default `regex` should be fine.
 
-This table was last updated on 2026-08-17 at 01:54 UTC.
+This table was last updated on 2026-08-24 at 01:57 UTC.
 
 ``` r
 remotes::install_github("CDCgov/cran-packages")
@@ -48,7 +48,7 @@ get_cdc_authored()
 | [epiworldRcalibrate](https://CRAN.R-project.org/package=epiworldRcalibrate) | 0.1.4 | 2026-04-02 19:20:02 UTC | Centers for Disease Control and Prevention | fnd | Award number 1U01CK000585; 75D30121F00003 |
 | [epiworldRShiny](https://CRAN.R-project.org/package=epiworldRShiny) | 0.2.3 | 2025-05-14 14:50:02 UTC | Centers for Disease Control and Prevention | fnd | Award number 1U01CK000585; 75D30121F00003 |
 | [facilityepimath](https://CRAN.R-project.org/package=facilityepimath) | 0.2.1 | 2025-11-07 00:10:02 UTC | Centers for Disease Control and Prevention | fnd | Modeling Infectious Diseases in Healthcare Network award number U01CK000585 and Insight Net award number CDC-RFA-FT-23-0069 |
-| [gtrendshealth](https://CRAN.R-project.org/package=gtrendshealth) | 1.0.0 | 2025-06-17 06:10:02 UTC | US Centers for Disease Control and Prevention | cph |  |
+| [gtrendshealth](https://CRAN.R-project.org/package=gtrendshealth) | 1.0.1 | 2026-08-19 22:00:09 UTC | US Centers for Disease Control and Prevention | cph |  |
 | [islandcodes](https://CRAN.R-project.org/package=islandcodes) | 0.2.0 | 2026-07-06 14:20:13 UTC | University of Aruba |  | Digital Competence Dutch Caribbean (DCDC) Network |
 | [linkeR](https://CRAN.R-project.org/package=linkeR) | 0.1.3 | 2025-10-07 17:10:02 UTC | Centers for Disease Control and Prevention’s Center for Forecasting and Outbreak Analytics | fnd | Cooperative agreement CDC-RFA-FT-23-0069 |
 | [LTASR](https://CRAN.R-project.org/package=LTASR) | 0.1.4 | 2024-08-22 23:00:02 UTC | Stephen Bertke <sbertke@cdc.gov> |  |  |
