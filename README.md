@@ -30,7 +30,7 @@ Unless you expect or know the file to have moved locations, the default
 `url` should be fine. Unless you want to try different search patterns,
 the default `regex` should be fine.
 
-This table was last updated on 2026-09-14 at 04:53 UTC.
+This table was last updated on 2026-09-21 at 04:53 UTC.
 
 ``` r
 remotes::install_github("CDCgov/cran-packages")
@@ -53,7 +53,7 @@ get_cdc_authored()
 | [linkeR](https://CRAN.R-project.org/package=linkeR) | 0.1.3 | 2025-10-07 17:10:02 UTC | Centers for Disease Control and Prevention’s Center for Forecasting and Outbreak Analytics | fnd | Cooperative agreement CDC-RFA-FT-23-0069 |
 | [LTASR](https://CRAN.R-project.org/package=LTASR) | 0.1.4 | 2024-08-22 23:00:02 UTC | Stephen Bertke <sbertke@cdc.gov> |  |  |
 | [measles](https://CRAN.R-project.org/package=measles) | 0.2.0 | 2026-03-31 23:00:02 UTC | Centers for Disease Control and Prevention | fnd | Award number 1U01CK000585; 75D30121F00003 |
-| [multigroup.vaccine](https://CRAN.R-project.org/package=multigroup.vaccine) | 0.1.1 | 2026-02-09 20:10:05 UTC | Centers for Disease Control and Prevention’s Center for Forecasting and Outbreak Analytics | fnd | Cooperative agreement CDC-RFA-FT-23-0069 |
+| [multigroup.vaccine](https://CRAN.R-project.org/package=multigroup.vaccine) | 0.1.2 | 2026-09-18 22:40:02 UTC | Centers for Disease Control and Prevention’s Center for Forecasting and Outbreak Analytics | fnd | Cooperative agreement CDC-RFA-FT-23-0069 |
 | [naaccr](https://CRAN.R-project.org/package=naaccr) | 3.1.1 | 2024-09-20 14:20:05 UTC | United States Centers for Disease Control and Prevention | cph |  |
 | [nncc](https://CRAN.R-project.org/package=nncc) | 2.0.0 | 2024-01-11 14:10:02 UTC | Beau Bruce <lue7@cdc.gov> Zhaohui Cui <nyv5@cdc.gov> | aut |  |
 | [PAutilities](https://CRAN.R-project.org/package=PAutilities) | 1.3.0 | 2026-03-15 06:10:56 UTC | Centers for Disease Control and Prevention | ctb |  |
